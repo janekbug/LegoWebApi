@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Lego.Ev3.Desktop">
-      <HintPath>..\..\legoev3\Lego.Ev3.Desktop\bin\Debug\Lego.Ev3.Desktop.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +43,12 @@
     <Compile Include="Movement\IMovementService.cs" />
     <Compile Include="Movement\LegoMindstormsMovementService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lego.Ev3.Desktop\Lego.Ev3.Desktop.csproj">
+      <Project>{79c444de-86f1-4aff-903a-4b6ed31655ea}</Project>
+      <Name>Lego.Ev3.Desktop</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
